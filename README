@@ -1,0 +1,2 @@
+Configured two consumer to consume the message from the samme topic and different group name
+usually topic and group name are configured in the program
