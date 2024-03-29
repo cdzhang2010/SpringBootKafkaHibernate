@@ -1,0 +1,22 @@
+1) Start the ZooKeeper service
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+2) Start the Kafka broker service
+bin/kafka-server-start.sh config/server.properties
+
+POST http://localhost:8080/api/v1/kafka/publish/json
+
+ID no need to pass, database will auto generate the ID
+{
+    "firstName": "Testing",
+    "lastName": "Zhang"
+}
+
+
+
+brew install apache-activemq
+
+brew services start activemq
+
+http://localhost:8161/admin/
+
